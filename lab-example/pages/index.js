@@ -80,17 +80,23 @@ export default function Home() {
 
 	//Rendenring data
 	return (
-		<div className={styles.cardContainer}>
+		<div className={styles.container}>
 			<div className={styles.card}>
-				<img src={profileImage} className={styles.picture} alt="" />
+				<img src={profileImage} className={styles.profilePicture} alt="" />
 				<h2>{profilName}</h2>
-				<hr />
-				<p>
-					From: {profilCity}, {profilCountry}
-				</p>
-				<p>Phone: {profilCell}</p>
-				<p>Email: {profilEmail}</p>
-				<button onClick={() => profilData()}>New Contact</button>
+				<div className={styles.infoCard}>
+					<span>
+						From: {profilCity}, {profilCountry}
+					</span>
+					<span>Phone: {profilCell}</span>
+					<span>{profilEmail}</span>
+					<button
+						className={styles.btnNewContact}
+						onClick={() => profilData()}
+					>
+						New Contact
+					</button>
+				</div>
 			</div>
 		</div>
 	);
