@@ -1,3 +1,11 @@
 .container {
-  padding: 0 2rem;
+  padding: 1.5rem 2rem;
+  font-size: 8px;
+  border-style: outset;
+  display: flex;
+}
+
+.text {
+  margin: 0.3rem;
+  padding: 0.3rem;
 }
